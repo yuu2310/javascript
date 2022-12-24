@@ -50,6 +50,10 @@
             {
                 "name": "skipper_app",
                 "path": "/skipper_app"
+            },
+            {
+                "name": "ec2-user",
+                "path": "~/"
             }
         ]
     }

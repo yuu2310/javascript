@@ -1,0 +1,30 @@
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box1 {
+  height: 200px;
+  width: 200px;
+}
+
+.bg1 {
+  background-color: #FFAAAA;
+}
+
+.bg2 {
+  background-color: #FFBBBB;
+}
+
+.bg3 {
+  background-color: #FFCCCC;
+}
+
+.bg4 {
+  background-color: #FFDDDD;
+}
+
+/*.box1-ext {*/
+/*  border: 10px solid black;*/
+/*  background-color: #40E0D0;*/
+/*}*/

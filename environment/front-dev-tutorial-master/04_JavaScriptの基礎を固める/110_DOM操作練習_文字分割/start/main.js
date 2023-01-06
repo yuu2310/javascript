@@ -1,4 +1,4 @@
-document.addEventListener('DOMcontentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
   const el = document.querySelector('.animate-title');
   const str = el.innerHTML.trim().split("");
 

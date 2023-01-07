@@ -6,7 +6,13 @@ const obj = {
         const fn = function() {
             console.log(this);
         };
-        window.setTimeout(fn);  
+        window.setTimeout(fn)
+    }
+}
+
+const window = {
+    setTimeout: function(fn) {
+        fn();
     }
 }
 
@@ -14,10 +20,14 @@ class MyObj {
     constructor() {
         this.first_name = 'Mafia';
         this.last_name = 'Code';
+        this.age = 30;
     }
 
     printFullName() {
         console.log(this.first_name);
+        console.log(this.last_name);
+        console.log(this.age);
+        
         const fn = function() {
             console.log(this);
         };

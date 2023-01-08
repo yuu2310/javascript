@@ -1,191 +1,76 @@
-html {
-  font-family: "Teko", sans-serif;
-}
 
-body {
-  margin: 0;
-}
+Error: Undefined mixin 'animation'.
+        on line 41 of /home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss, in `animation'
+        from line 41 of /home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss
 
-#container {
-  position: relative;
-  height: 100vh;
-  background-color: teal;
-}
+36:     opacity: 0;
+37:   }
+38: }
+39: 
+40: .animate-title.inview .char {
+41:   @include animation(
+42:     $name: kf-animate-chars,
+43:     $duration: 0.5s,
+44:     $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
+45:     $fill-mode: both
+46:   );
 
-.animate-title,
-.tween-animate-title {
-  color: white;
-  opacity: 0;
-  font-size: 2em;
-}
-.animate-title.inview,
-.tween-animate-title.inview {
-  opacity: 1;
-}
-.animate-title.inview .char,
-.tween-animate-title.inview .char {
-  display: inline-block;
-}
-.animate-title .char,
-.tween-animate-title .char {
-  opacity: 0;
-}
+Backtrace:
+/home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss:41:in `animation'
+/home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss:41
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/bin/scss:13:in `<top (required)>'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/scss:23:in `load'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/scss:23:in `<main>'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `<main>'
 
-.animate-title.inview .char {
-  -webkit-animation-name: kf-animate-chars;
-          animation-name: kf-animate-chars;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
-          animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-.animate-title.inview .char:nth-child(1) {
-  -webkit-animation-delay: 0.04s;
-          animation-delay: 0.04s;
-}
-.animate-title.inview .char:nth-child(2) {
-  -webkit-animation-delay: 0.08s;
-          animation-delay: 0.08s;
-}
-.animate-title.inview .char:nth-child(3) {
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-}
-.animate-title.inview .char:nth-child(4) {
-  -webkit-animation-delay: 0.16s;
-          animation-delay: 0.16s;
-}
-.animate-title.inview .char:nth-child(5) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.animate-title.inview .char:nth-child(6) {
-  -webkit-animation-delay: 0.24s;
-          animation-delay: 0.24s;
-}
-.animate-title.inview .char:nth-child(7) {
-  -webkit-animation-delay: 0.28s;
-          animation-delay: 0.28s;
-}
-.animate-title.inview .char:nth-child(8) {
-  -webkit-animation-delay: 0.32s;
-          animation-delay: 0.32s;
-}
-.animate-title.inview .char:nth-child(9) {
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-}
-.animate-title.inview .char:nth-child(10) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.animate-title.inview .char:nth-child(11) {
-  -webkit-animation-delay: 0.44s;
-          animation-delay: 0.44s;
-}
-.animate-title.inview .char:nth-child(12) {
-  -webkit-animation-delay: 0.48s;
-          animation-delay: 0.48s;
-}
-.animate-title.inview .char:nth-child(13) {
-  -webkit-animation-delay: 0.52s;
-          animation-delay: 0.52s;
-}
-.animate-title.inview .char:nth-child(14) {
-  -webkit-animation-delay: 0.56s;
-          animation-delay: 0.56s;
-}
-.animate-title.inview .char:nth-child(15) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.animate-title.inview .char:nth-child(16) {
-  -webkit-animation-delay: 0.64s;
-          animation-delay: 0.64s;
-}
-.animate-title.inview .char:nth-child(17) {
-  -webkit-animation-delay: 0.68s;
-          animation-delay: 0.68s;
-}
-.animate-title.inview .char:nth-child(18) {
-  -webkit-animation-delay: 0.72s;
-          animation-delay: 0.72s;
-}
-.animate-title.inview .char:nth-child(19) {
-  -webkit-animation-delay: 0.76s;
-          animation-delay: 0.76s;
-}
-.animate-title.inview .char:nth-child(20) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-.animate-title.inview .char:nth-child(21) {
-  -webkit-animation-delay: 0.84s;
-          animation-delay: 0.84s;
-}
-.animate-title.inview .char:nth-child(22) {
-  -webkit-animation-delay: 0.88s;
-          animation-delay: 0.88s;
-}
-.animate-title.inview .char:nth-child(23) {
-  -webkit-animation-delay: 0.92s;
-          animation-delay: 0.92s;
-}
-.animate-title.inview .char:nth-child(24) {
-  -webkit-animation-delay: 0.96s;
-          animation-delay: 0.96s;
-}
-.animate-title.inview .char:nth-child(25) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.animate-title.inview .char:nth-child(26) {
-  -webkit-animation-delay: 1.04s;
-          animation-delay: 1.04s;
-}
-.animate-title.inview .char:nth-child(27) {
-  -webkit-animation-delay: 1.08s;
-          animation-delay: 1.08s;
-}
-.animate-title.inview .char:nth-child(28) {
-  -webkit-animation-delay: 1.12s;
-          animation-delay: 1.12s;
-}
-.animate-title.inview .char:nth-child(29) {
-  -webkit-animation-delay: 1.16s;
-          animation-delay: 1.16s;
-}
-.animate-title.inview .char:nth-child(30) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-@-webkit-keyframes kf-animate-chars {
-  0% {
-    opacity: 0;
-    transform: translateY(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes kf-animate-chars {
-  0% {
-    opacity: 0;
-    transform: translateY(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'animation'.\A         on line 41 of /home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss, in `animation'\A         from line 41 of /home/ec2-user/environment/front-dev-tutorial-master/05_JavaScriptを実践で使う/020_スクロール×文字アニメーション/start/style.scss\A \A 36:     opacity: 0;\A 37:   }\A 38: }\A 39: \A 40: .animate-title.inview .char {\A 41:   @include animation(\A 42:     $name: kf-animate-chars,\A 43:     $duration: 0.5s,\A 44:     $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),\A 45:     $fill-mode: both\A 46:   );"; }

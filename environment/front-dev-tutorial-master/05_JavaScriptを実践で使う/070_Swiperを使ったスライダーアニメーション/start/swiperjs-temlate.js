@@ -1,8 +1,10 @@
 // Swiperのサイトからコピーしてくるコードです。（JavaScript用）
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "vertical",
+  // direction: "vertical",
   loop: true,
+  // effect: 'fade',
+   effect: 'coverflow',
 
   // If we need pagination
   pagination: {

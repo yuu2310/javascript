@@ -44,3 +44,9 @@
   @extend .font-sm;
   color: $cSubTitle;
 }
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
